@@ -1,0 +1,45 @@
+en:
+  welcome: 'Welcome to Calculator! Enter your name:'
+  valid_name: 'Make sure to enter a valid name.'
+  first_number: "What's the first number?"
+  not_valid: "That's not a valid number"
+  second_number: "What's the second number?"
+  must_choose: 'Must choose 1, 2, 3 or 4'
+  operator_options: |
+    "What operation would you like to perform?
+    1) Addition
+    2) Subtraction
+    3) Multiplication
+    4) Division"
+  another_calculation: 'Do you want to perform another calculation? (Y to calculate again)'
+  goodbye: 'Goodbye.'
+  add: 'Adding'
+  subtract: 'Subtracting'
+  multiply: 'Multiplying'
+  divide: 'Dividing'
+  greeting: 'Hello %{value}'
+  operating_message: '%{value} the two numbers...'
+  result: 'The result is %{value}!'
+
+nl:
+  welcome: 'Welkom bij Rekenmachine! Vul uw naam in:'
+  valid_name: 'Zorg ervoor dat u een geldige naam invoert.'
+  first_number: "Wat is het eerste nummer?"
+  not_valid: "Dat is geen geldig nummer"
+  second_number: "Wat is het tweede nummer?"
+  must_choose: 'Moet 1, 2, 3 of 4 kiezen'
+  operator_options: |
+    "Welke operatie wilt u laten uitvoeren?
+    1) toevoeging
+    2) aftrekken
+    3) vermenigvuldiging
+    4) Divisie"
+  another_calculation: 'Wilt u een andere berekening uitvoeren? (Y om opnieuw te berekenen)'
+  goodbye: 'tot ziens.'
+  add: 'toevoegen'
+  subtract: 'Aftrekken'
+  multiply: 'Vermenigvuldigen'
+  divide: 'Verdelen'
+  greeting: 'Hallo %{value}'
+  operating_message: '%{value} de twee nummers...'
+  result: 'Het resultaat is %{value}!'

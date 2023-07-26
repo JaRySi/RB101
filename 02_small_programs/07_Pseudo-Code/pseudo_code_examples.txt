@@ -1,0 +1,126 @@
+1: A method that returns the sum of two integers.
+  Casual:
+    Given two integers
+    save value of the sum of the two integers
+    return the value
+
+  Formal:
+    START
+
+    # Given two integers 'num1' and 'num2'
+
+    SET sum = num1 + num2 
+
+    PRINT sum
+
+    END
+
+2: A method that takes an array of strings, and returns a string that is all those strings concatenated together.
+  Casual:
+    Given an array of strings
+    Make a new empty string.
+    Iterate through the array, adding each string to the new one.
+    When finished iterating, return the new string.
+
+  Formal:
+    START
+
+    # Given an array of strings 'arr'
+
+    SET iterator = 0
+    SET result = ''
+
+    WHILE iterator <= length of arr
+      SET result = result + arr value at iterator position
+
+      iterator = iterator + 1
+    
+    PRINT result
+
+    END
+
+3: A method that takes an array of integers, and returns a new array with every other element from the original array, starting with the first element. For instance:
+every_other([1,4,7,2,5]) # => [1,7,5]
+  Casual:
+    Given an array of integers
+    Make a new array
+    Iterate through the original array, adding each integer at an even number position to the new array
+    When finished iterating, return the new array.
+
+  Formal:
+    START
+
+    # Given an array of integers 'arr1'
+
+    SET arr2 = []
+    SET iterator = 0
+
+    WHILE iterator <= length of arr1
+      IF iterator % 2 = 0
+        SET arr2 = arr2 + value at index iterator of arr1
+      ELSE
+
+      iterator = iterator + 1
+
+    PRINT arr2
+    END
+
+4: A method that determines the index of the 3rd occurrence of a given character in a string. For instance, if the given character is 'x' and the string is 'axbxcdxex', the method should return 6 (the index of the 3rd 'x'). If the given character does not occur at least 3 times, return nil.
+  Casual:
+    Given a string of characters, and given a single character
+    Make a counter
+    Make a place tracker
+    Go through the string checking for the character, when found, increment counter by 1, and set place tracker to current index
+    Go through the string again, starting at place tracker + 1...
+    If counter reaches 3, return index
+    If counter does not reach 3 and the end of the string is reached, return nil
+
+  Formal:
+  START
+
+  # Given a string of characters 'char_string' and given a single character 'char_single'
+
+  SET counter = 0
+  SET bookmark = 0
+
+  WHILE bookmark <= length of char_string + 1
+    IF Counter = 3
+      PRINT bookmark - 1
+    ELSE IF bookmark = length of char_string
+      PRINT nil
+    ELSE IF (value of char_string at index = bookmark) == char_single
+      SET counter = counter + 1
+      SET bookmark = bookmark + 1
+    ELSE
+     SET bookmark = bookmark + 1
+
+    END
+
+5: A method that takes two arrays of numbers and returns the result of merging the arrays. The elements of the first array should become the elements of the even indexes of the returned array, while the elements of the second array should become the elements at the odd indexes. For instance: 
+merge([1, 2, 3], [4, 5, 6]) # => [1, 4, 2, 5, 3, 6]
+You may assume that both array arguments have the same number of elements. 
+  Casual:
+    Given two arrays of numbers
+    Make a counter 0
+    When the counter is an even number, take a number from the first array, and put it into the result array, increment counter by 1
+    When the counter is an odd number, take a number from the second array, and put it into the result array, increment counter by 1
+    When the counter is equal to the sum of the lengths of the two starting arrays, return the result array
+
+  Formal:
+  START
+
+  # Given two equal length arrays of numbers, 'arr1' and 'arr2'
+
+  SET counter = 0
+
+  WHILE counter < arr1 + arr2
+    IF counter % 2 = 0
+      SET result = result + first digit of arr1
+      SET counter = counter + 1
+    ELSE
+      SET result = result + first digit of arr2
+      SET counter = counter + 1
+
+  PRINT result
+
+  END
